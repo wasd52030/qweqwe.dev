@@ -1,7 +1,15 @@
 # qweqwe.dev
 
 **前言**<br>
- 　　某天刷Bilibili時看到[這玩意](https://www.bilibili.com/video/BV1hv411G7iH)，感覺還挺有趣，於是用golang寫了一個半復刻版，當作是對gin框架的練習。已經完成隨機單字陣列、隨機句子陣列，隨機段落陣列、依據圖片大小與檔案後綴(現支援jpg和png)生成圖片。
+ 　　某天刷Bilibili時看到[這玩意](https://www.bilibili.com/video/BV1hv411G7iH)，感覺還挺有趣，於是用golang寫了一個半復刻版，當作是對gin框架的練習。
+
+**已完成功能**<br>
+
+1. 依據給定長度取得隨機**lorem**單字陣列
+2. 依據給定長度取得隨機**lorem**句子陣列
+3. 依據給定長度取得隨機**lorem**段落陣列
+4. 依據所給的width和height與副檔名(現支援jpg與png)生成圖片
+5. 給出一些以逗點分隔的元素，取得打散後的陣列
 
 **啟動專案**
 
