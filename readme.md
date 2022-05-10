@@ -1,7 +1,8 @@
 # qweqwe.dev
 
 ## 前言<br>
- 　　某天刷Bilibili時看到[這玩意](https://www.bilibili.com/video/BV1hv411G7iH)，感覺還挺有趣，於是用golang寫了一個半復刻版，當作是對gin框架的練習。
+
+某天刷Bilibili時看到[這玩意](https://www.bilibili.com/video/BV1hv411G7iH)，感覺還挺有趣，於是用golang寫了一個半復刻版，當作是對gin框架的練習。
 
 ## 已完成功能<br>
 
