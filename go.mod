@@ -5,6 +5,7 @@ go 1.18
 require (
 	github.com/drhodes/golorem v0.0.0-20220328165741-da82e5b29246
 	github.com/gin-gonic/gin v1.7.7
+	github.com/russross/blackfriday v1.6.0
 	github.com/tfriedel6/canvas v0.12.1
 )
 
