@@ -23,9 +23,9 @@ go run main.go
 ## 如何使用
 
 1. 返回lorem單字陣列<br>
-    ``http://localhost:1234/words/n``<br>
+    ``http://localhost:1234/word/n``<br>
     n為需要多少組，最低一組<br>
-    例: ``http://localhost:1234/words/10``<br>
+    例: ``http://localhost:1234/word/10``<br>
 2. 返回lorem句子陣列<br>
     ``http://localhost:1234/sentence/n``<br>
     n為需要多少組，最低一組<br>
@@ -44,4 +44,4 @@ go run main.go
     ``http://localhost:1234/random/arrayitem``<br>
     arrayitem以逗號分隔<br>
     例1: ``http://localhost:1234/random/1,2,3,4,5,6,7,8``<br>
-    例2: ``http://localhost:1234/random/qw,ew,cx,ar,we,yg,zi,ks``<br>
+    例2: ``http://localhost:1234/random/qw,ew,cx,ar,we,yg,zi,lks``<br>

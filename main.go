@@ -1,21 +1,28 @@
 package main
 
 import (
+	"io/ioutil"
+	"log"
+	"net/http"
 	controllers "qweqwe/Controllers"
 
 	"github.com/gin-gonic/gin"
+	"github.com/russross/blackfriday"
 )
 
 func main() {
+
+	readmeMD, err := ioutil.ReadFile("readme.md")
+	if err != nil {
+		log.Fatal(err)
+	}
+	readmeHTM := blackfriday.MarkdownCommon(readmeMD)
+
 	server := gin.Default()
 	server.GET("/", func(ctx *gin.Context) {
-		ctx.JSON(200, gin.H{
-			"status":  200,
-			"message": "ok",
-			"data":    "",
-		})
+		ctx.Data(http.StatusOK, "text/html; charset=utf-8", readmeHTM)
 	})
-	server.GET("/words/:count", controllers.WordController)
+	server.GET("/word/:count", controllers.WordController)
 	server.GET("/sentence/:count", controllers.SentenceController)
 	server.GET("/paragraph/:count", controllers.ParagraphController)
 	server.GET("/image/:imagesize", controllers.ImageController)
