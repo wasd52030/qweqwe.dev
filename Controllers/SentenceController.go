@@ -10,7 +10,7 @@ import (
 )
 
 func SentenceController(ctx *gin.Context) {
-	rand.Seed(time.Now().Unix())
+	rand := rand.New(rand.NewSource(time.Now().Unix()))
 	count, _ := strconv.Atoi(ctx.Param("count"))
 	sentence := []string{}
 	for i := 0; i < count; i++ {

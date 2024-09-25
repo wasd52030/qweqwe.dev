@@ -17,7 +17,7 @@ func RandomController(ctx *gin.Context) {
 		})
 		return
 	}
-	rand.Seed(time.Now().Unix())
+	rand := rand.New(rand.NewSource(time.Now().Unix()))
 	rand.Shuffle(len(item), func(i, j int) { item[i], item[j] = item[j], item[i] })
 	ctx.JSON(200, gin.H{
 		"status":  200,

@@ -1,10 +1,11 @@
 package main
 
 import (
-	"io/ioutil"
 	"log"
 	"net/http"
-	controllers "qweqwe/Controllers"
+	"os"
+
+	controllers "qweqwe.dev/Controllers"
 
 	"github.com/gin-gonic/gin"
 	"github.com/russross/blackfriday"
@@ -12,7 +13,7 @@ import (
 
 func main() {
 
-	readmeMD, err := ioutil.ReadFile("readme.md")
+	readmeMD, err := os.ReadFile("readme.md")
 	if err != nil {
 		log.Fatal(err)
 	}
